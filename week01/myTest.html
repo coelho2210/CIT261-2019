@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Operations</title>
+<script type="text/javascript">
+     
+function sum() {
+     // take the input
+   var number1  = parseInt(document.getElementById("number1").value);
+   var number2  = parseInt(document.getElementById("number2").value);
+  
+  // operation (+)
+     var addition = number1 + number2;
+     
+     // show the results   
+     var result = document.getElementById("result");
+     result.innerHTML = addition;
+}
+</script>
+</head>
+<body>                             
+  <h1>Operations</h1> 
+  <p>put your number here<input type="text" id="number1"></p> 
+  <p>put your number here<input type="text" id="number2"></p>
+ <button type="button" onclick = "sum()">+</button>
+
+<div id="result"></div>
+</body>       
+</html>
